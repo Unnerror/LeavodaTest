@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# LeavodaTest - React Login Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple login + dashboard web app built for a technical assignment.
 
-## Available Scripts
+Users can log in using only a **username**, and upon successful login, their full profile details are displayed on a dashboard — all data is fetched from the [DummyJSON API](https://dummyjson.com/).
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔐 **Login page** — with username-only login
+- 🧑‍💼 **Dashboard** — displays:
+  - Profile image
+  - Name, gender, age
+  - Address (full)
+  - Company (name, department, title)
+  - Contact info (email, phone)
+- 📦 **State management** with Redux Toolkit
+- 🎨 **UI components** with [Material-UI (MUI)](https://mui.com/)
+- 🌐 **Routing** with `react-router-dom`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 How to Run
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repo  
+```bash
+git clone https://github.com/Unnerror/LeavodaTest.git
+```
+and go to the project's folder
+```bash
+cd LeavodaTest
+```
 
-### `npm run build`
+2. Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the dev server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+App will be running at:
+👉 http://localhost:3000/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧪 Test Login Username
+Use any of the following valid usernames:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+emilys
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+michaelw
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+sophiab
 
-## Learn More
+These users are part of the /users dataset from DummyJSON.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Tech Stack
+- React
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Redux Toolkit
 
-### Code Splitting
+- Material-UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Axios
 
-### Analyzing the Bundle Size
+- React Router DOM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- DummyJSON API
 
-### Making a Progressive Web App
+## 📝 Notes
+Password input is intentionally excluded, as per assignment instructions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Styling is kept clean and minimal for readability and UX clarity.
 
-### Advanced Configuration
+SCSS was not used, since styling with MUI was sufficient and SCSS was optional.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ✅ Final Commit
+The entire project was developed in one session, with final commit containing all components and routing in a clean state.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ for the Leavoda assignment.
